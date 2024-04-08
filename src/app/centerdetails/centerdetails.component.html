@@ -1,0 +1,25 @@
+<div>
+  <h2>Center Details</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Center ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let center of centers">
+        <td>{{ center.CenterID }}</td>
+        <td>{{ center.CenterName }}</td>
+        <td>{{ center.CenterAddress?.length ? center.CenterAddress[0]?.Address : 'N/A' }}</td>
+        <td>{{ center.phone }}</td>
+        <td>{{ center.email }}</td>
+        <td>{{ center.website }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

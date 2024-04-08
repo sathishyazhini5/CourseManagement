@@ -1,0 +1,41 @@
+
+<!-- enrollment.component.html -->
+<div>
+    <h2>Enrollment Details</h2>
+    <table >
+      <thead>
+        <tr>
+          <th>Enrolment ID</th>
+          <th>Student ID</th>
+          <th>Trainee Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Qualification</th>
+          <th>Previous Experience</th>
+          <th>Course</th>
+          <th>Referred By</th>
+          <th>Enrolled Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of enrollment">
+          <td>{{ item.EnrolmentID }}</td>
+          <td>{{ item.StudentID }}</td>
+          <td>{{ item.TraineeName }}</td>
+          <td>{{ item.Mobile }}</td>
+          <td>{{ item.emailid }}</td>
+          <td>{{ item.Address }}</td>
+          <td>{{ item.Qualification }}</td>
+          <td>{{ item.PreviousExperience }}</td>
+          <td>{{ item.Course }}</td>
+          <td>{{ item.Referedby }}</td>
+          <td>{{ item.EnrolledDate }}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+  </div>
+  
+   

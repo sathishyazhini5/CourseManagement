@@ -1,0 +1,27 @@
+<!-- fees.component.html -->
+<h2>Fees Details</h2>
+<div *ngIf="fees">
+  <table>
+    <thead>
+      <tr>
+        <th>Fees ID</th>
+        <th>Course ID</th>
+        <th>Student ID</th>
+        <th>Total Fees Amount</th>
+        <th>Paid Amount</th>
+        <th>Pending Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let fee of fees">
+        <td>{{ fee.FeesID }}</td>
+        <td>{{ fee.CourseID }}</td>
+        <td>{{ fee.StudentID }}</td>
+        <td>{{ fee.Totalfeesamount }}</td>
+        <td>{{ fee.Paidamount }}</td>
+        <td>{{ fee.Pendingamount }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
